@@ -10,6 +10,7 @@ class SearchBar extends Component {
 		this.state = { term: ''};
 
 		this.onInputChange = this.onInputChange.bind(this);
+		// fixes scope problem with "this", sends it up from onInputChange to next function
 
 		this.onFormSubmit = this.onFormSubmit.bind(this);
 	}
